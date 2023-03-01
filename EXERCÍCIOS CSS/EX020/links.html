@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: pink;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color: pink;
+        }
+        a:hover{
+           
+            color: rgb(89, 177, 147);
+        }
+        a:active{
+            color: blueviolet;
+        }
+        a::after{
+            content: '✦';
+        }
+        a::before{
+            content: '✦';
+        }
+        a#especial::after {
+            content:'✵';
+        }
+        #especial::before{
+            content: '✵';
+            
+        }
+        #especial{
+            background-color: rgb(255, 192, 203);
+           color: white;
+        }
+        #especial:visited{
+            color: white;
+        }
+        a#diferente::after{
+            content:'✨'
+
+        }
+        a#diferente::before{
+            content:'✨'
+        }
+        a#diferente{
+color: aqua;
+        }
+        a#diferente:hover{ 
+            border: 5px dotted pink
+        }
+        a#diferente:visited{
+            color: rgb(57, 124, 102);
+        }
+        
+      
+        
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+
+    <ul>
+        <li>
+            <a href="https://gustavoguanabara.github.io" target="_blank">
+                GitHub Repositório </a>
+        </li>
+        
+        <li>
+            <a href="https://youtube.com/cursoemvideo" target="_blank" id="especial">
+                Canal do Youtube
+            </a>
+        </li>
+           <li>
+               <a href="https://www.cursoemvideo.com" target="_blank">
+                   Site do Curso em Video
+               </a>
+               <p><a href="pseudoclasses.html" id="diferente"> para voltar no início </a></p>
+           </li>
+    </ul>
+   
+</body>
+</html>
